@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.nav-brand {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+nav {
+  background-color: #000;
+  padding: 15px 10px;
+}
+.clearfix {
+  padding: 15px 10px;
+}
+.navdisc p {
+  font-weight: 300;
+  opacity: 0.7;
+}
+.font-icn i {
+  font-size: 1.3rem;
+  background: #fff;
+  box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.125);
+  padding: 15px;
+  margin: 7px;
+  border-radius: 15%;
+}
+.discount-banner {
+  position: relative;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.discount-banner img {
+  padding: 15px;
+  border-radius: 2rem;
+}
+.discount-content-banner {
+  padding: 10% 5%;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  width: 50%;
+}
+.discount-content-banner h2 {
+  font-size: 2.5rem;
+}
+.discount-content-banner p {
+  padding-top: 1em;
+}
+.discount-content-banner a {
+  margin-top: 1em;
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  display: inline-block;
+  background: #fff;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+}
+.product-categories-home a {
+  padding: 0.5em 1em;
+  color: #2a2a2a;
+  text-decoration: none;
+  background: #fff;
+  border: 1px ridge #ccc;
+  margin: 1em 1em;
+  display: inline-block;
+  border-radius: 0.5rem;
+  transition: 300ms linear;
+}
+.product-categories-home a:hover {
+  background: #ed5138;
+  border: 1px ridge #ed5138;
+  color: #fff;
+}
+.flash-title {
+  font-size: 2em;
+  padding: 0.5em;
+}
+.flash-timer {
+  padding: 0.5em;
+}
+.hrs {
+  background: #dbdada;
+  padding: 0.25em;
+  border-radius: 15%;
+  font-size: small;
+  margin-right: 0.4em;
+  font-weight: 600;
+}
+.min {
+  background: #dbdada;
+  padding: 0.25em;
+  border-radius: 15%;
+  font-size: small;
+  margin-right: 0.4em;
+  font-weight: 600;
+}
+.sec {
+  background: #dbdada;
+  padding: 0.25em;
+  border-radius: 15%;
+  font-size: small;
+  margin-right: 0.4em;
+  font-weight: 600;
+}
+.flash-sale-product-list {
+  padding: 0.5em 1em;
+}
+.product-grp-one {
+  width: 200px;
+  margin: 10px;
+  display: inline-block;
+}
+.flash-sale-product-list h4 {
+  font-weight: 300;
+  text-overflow: ellipsis;
+  font-size: 1.1rem;
+  margin-top: 0.5em;
+}
+.flash-sale-product-list img{
+    border-radius: 1em;
+}
+.flash-sale-product-list p {
+    font-weight: 700;
+    text-overflow: ellipsis;
+    font-size: 1.3rem;
+    margin-top: 0.5em;
+  }
+  /* .flexbox{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1700px;
+    overflow-x: scroll;
+  } */
+  .d-flex{
+    display: flex;
+  }
+  .flash-sec{
+    justify-content: space-between;
+  }
+  .a-itm-center{
+    align-items: center;
+  }
+  .pe-3{
+    padding-right: 0.75rem;
+  }
+  .fixed-footer{
+    background: #2a2a2a;
+    position: fixed;
+    bottom: 3%;
+    left: 15%;
+    display: flex;
+    padding: 1%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+  }
