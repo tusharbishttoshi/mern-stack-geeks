@@ -151,3 +151,28 @@ nav {
     width: 1700px;
     overflow-x: scroll;
   } */
+  .d-flex{
+    display: flex;
+  }
+  .flash-sec{
+    justify-content: space-between;
+  }
+  .a-itm-center{
+    align-items: center;
+  }
+  .pe-3{
+    padding-right: 0.75rem;
+  }
+  .fixed-footer{
+    background: #2a2a2a;
+    position: fixed;
+    bottom: 3%;
+    left: 15%;
+    display: flex;
+    padding: 1%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+  }
