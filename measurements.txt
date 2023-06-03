@@ -1,0 +1,2 @@
+banner-discount - 2000*600
+primary-checkbox- #ed5138
