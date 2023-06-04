@@ -163,16 +163,39 @@ nav {
   .pe-3{
     padding-right: 0.75rem;
   }
-  .fixed-footer{
+  .footer{
     background: #2a2a2a;
-    position: fixed;
-    bottom: 3%;
-    left: 15%;
+    padding: 1.5%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-top: 2em;
+    gap: 10px;
+  }
+  .footer .col-1{
     display: flex;
-    padding: 1%;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin: auto;
+    flex-direction: column;
+  }
+  .footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+    text-transform: capitalize;
+  }
+  .footer ul{
+    list-style-type: none;
+  }
+  .footer h4{
+    color:#878787;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .lower-footer{
+    grid-column: 1/7;
+    border-top: 1px ridge #454d5e;
+    margin-top:1em;
+  }
+  .big-points{
+    grid-template-columns: auto auto auto auto auto auto;
+    display: grid;  
+    color: #fff;
   }

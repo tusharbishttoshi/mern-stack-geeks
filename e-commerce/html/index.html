@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="../css/index.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../dependencies/slick-1.8.1/slick/slick.css"/>
 </head>
 <body>
     <header>
@@ -168,9 +169,104 @@
     </div>
     </div> 
     </main>
-    <footer class="fixed-footer">
-        <a href="#">Home</a>
+    <footer class="footer">
+       <div class="col-1">
+        <h4>about</h4>
+        <ul>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">corporate information</a></li>
+        </ul>
+       </div>
         
+       <div class="col-2">
+        <h4>help</h4>
+        <ul>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">corporate information</a></li>
+        </ul>
+       </div>
+        
+       <div class="col-3">
+        <h4>help</h4>
+        <ul>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">corporate information</a></li>
+        </ul>
+       </div>
+
+       <div class="col-4">
+        <h4>help</h4>
+        <ul>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">corporate information</a></li>
+        </ul>
+       </div>
+
+       <div class="lower-footer">
+        <div class="big-points">
+            <span></span>Become a Seller
+        </div>
+        <div class="big-points">
+            <span></span>Become a Seller
+        </div>
+        <div class="big-points">
+            <span></span>Become a Seller
+        </div>
+        <div class="big-points">
+            <span></span>Become a Seller
+        </div>
+        <div class="big-points">
+            <span></span>Become a Seller
+        </div>
+        <div class="big-points">
+            <span></span>Become a Seller
+        </div>
+       </div>
     </footer>
+    <script src="../dependencies/JQuery.js"></script>
+    <script src="../dependencies/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.flash-sale-product-list').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+    </script>
 </body>
 </html>
