@@ -13,13 +13,17 @@
     <header>
         <nav>
             <a class="nav-brand" href="#">Quickcom</a>
+            <ul>
+                <a class="navLogin" href="../html/login.html">login</a>
+                <a href="../html/register.html" class="navSignup">register</a>
+            </ul>
         </nav>
-        <div class="clearfix">
-            <div class="float-left navdisc">
+        <div class="clearfix d-flex justify-content-between">
+            <div class="navdisc">
                 <h1>Discover</h1>
                 <p>Deliver everything in just a minute</p>
             </div>
-            <div class="float-right font-icn">
+            <div class="font-icn">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-regular fa-bell"></i>
             </div>
@@ -52,9 +56,11 @@
 
     <div class="flash-sale-product-list">
         <div class="product-grp-one">
+          <a href="../html/product-desc.html">  
         <img src="../images/product-sample.jpg" class="img-fluid">
         <h4>Product Name</h4>
         <p>$140.00</p>
+    </a>
     </div>
 
     <div class="product-grp-one">
@@ -108,9 +114,6 @@
 
     <div class="clearfix">
         <h3 class="flash-title float-left">Most Popular</h3>
-        <!-- <div class="float-right flash-timer">
-            <span class="hrs">HH</span><span class="min">MM</span><span class="sec">SS</span>
-        </div> -->
     </div>
     
     <div class="flash-sale-product-list">
@@ -231,42 +234,10 @@
         </div>
        </div>
     </footer>
+
     <script src="../dependencies/JQuery.js"></script>
     <script src="../dependencies/slick-1.8.1/slick/slick.min.js"></script>
-    <script>
-        $('.flash-sale-product-list').slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 6,
-  slidesToScroll: 6,
-  arrows: false,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
-    </script>
+    <script src="../js/index.js"></script>
+
 </body>
 </html>

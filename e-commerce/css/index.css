@@ -5,17 +5,6 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.float-left {
-  float: left;
-}
-.float-right {
-  float: right;
-}
 .nav-brand {
   text-decoration: none;
   color: #fff;
@@ -145,6 +134,38 @@ nav {
     font-size: 1.3rem;
     margin-top: 0.5em;
   }
+  nav{
+    display: flex;
+    justify-content: space-around;
+  }
+  nav > ul{
+    display: flex;
+  }
+  .navLogin{
+    color:#fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #dbdada;
+    color: #000;
+    padding: 10% 20%;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-family: 'Nunito';
+    border-radius: 50px;
+  }
+  .navSignup{
+    color:#fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: #ed5138;
+    color: #fff;
+    padding: 10% 20%;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-family: 'Nunito';
+    border-radius: 50px;
+  }
   /* .flexbox{
     display: flex;
     flex-wrap: nowrap;
@@ -153,6 +174,9 @@ nav {
   } */
   .d-flex{
     display: flex;
+  }
+  .justify-content-between{
+    justify-content: space-between;
   }
   .flash-sec{
     justify-content: space-between;
@@ -191,11 +215,93 @@ nav {
   }
   .lower-footer{
     grid-column: 1/7;
+    grid-template-columns: auto auto auto auto auto auto;
     border-top: 1px ridge #454d5e;
-    margin-top:1em;
+    display: grid;
+    margin-top: 1em;
+    padding-top: 1em;
   }
   .big-points{
     grid-template-columns: auto auto auto auto auto auto;
     display: grid;  
     color: #fff;
+  }
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 50%;
+}
+.login-image{
+  background: #dcdcdc;
+}
+.login-image h3{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  padding: 20px;
+}
+.login-image figure{
+  text-align: center;
+  margin-top: 2em;
+}
+.login-image p{
+  margin-top: 0.25em;
+  padding: 0 20px;
+}
+/* The Close Button */
+.close {
+    color: #fff;
+    position: absolute;
+    right: 22.5%;
+    font-size: 3rem;
+    top: 9%;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-image img{
+    max-width: 100%;
+    height: auto;
+}
+.login-wrapper{
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
+.name{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+  @media only screen and (max-width: 1024px){
+    .discount-content-banner{
+      padding: 5%;
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+    .discount-content-banner{
+      width: 100%;
+      top: -6%;
+    }
   }
