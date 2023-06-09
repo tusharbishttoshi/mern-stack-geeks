@@ -4,10 +4,14 @@ reg[0].addEventListener('click', () => {
 }); 
 
 var fname = document.getElementsByClassName('fname');
-var fname_err = document.getElementsByClassName('fname-err');
-fname[0].addEventListener('keyup',()=>{
-    // console.log(fname[0].value);
-    if(fname[0].value.minlength = 4){
-        fname_err.innerHTML = "not accepted"
+var fname_err = document.getElementById('fname-err');
+fname[0].addEventListener('keyup',(event)=>{
+    if(event.target.value.length <= 4 ){
+        fname_err.innerHTML = "Hello";
+        fname_err.style.color = "#dc2222"
+    }
+    else{
+        fname_err.innerHTML = "byy";
+        fname_err.style.color = "#032D60"
     }
 });
